@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    background-color: azure;
+    margin: 20px;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.cost__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin: 16px 0;
+    background-color: rgb(48, 192, 192);
+    border-radius: 15px;
+    box-shadow: 0 5px 7px rgb(0, 0, 0, 0.25);
+}
+
+.cost__item-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-end;
+    flex-flow: column-reverse;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.cost__item h2 {
+    color: rgb(12, 131, 32);
+    font-size: 16px;
+    flex: 1;
+    margin: 0 16px;
+    color: rgb(224, 215, 250);
+}
+
+.cost__item-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(201, 45, 25);
+    background-color: rgb(238, 218, 130);
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.costs {
+    padding: 16px;
+    background-color: rgb(31, 114, 134);
+    margin: 32px auto;
+    width: 1120px;
+    max-width: 95%;
+
+}
+
+.cost__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin: 16px 0;
+    background-color: rgb(48, 192, 192);
+
+}
+
+.cost__item-description {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-end;
+    flex-flow: column-reverse;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.cost__item h2 {
+    color: rgb(12, 131, 32);
+    font-size: 16px;
+    flex: 1;
+    margin: 0 16px;
+    color: rgb(224, 215, 250);
+}
+
+.cost__item-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(201, 125, 25);
+    background-color: rgb(206, 238, 130);
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.cost__date {
+    display: flex;
+    flex-direction: column;
+    width: 88px;
+    height: 88px;
+    border: 1px solid rgb(255, 220, 196);
+    background-color: rgb(0, 255, 128);
+    color: rgb(20, 55, 121);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cost__date-month {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cost__date-year {
+    font-size: 13px;
+}
+
+.cost__date-day {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+}
+
+.new__cost {
+    text-align: center;
+    background-color: rgb(54, 154, 179);
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 62%;
+    border-radius: 10px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+.new__cost button {
+    font: inherit;
+    cursor: pointer;
+    padding: 0.7rem 1rem;
+    border: 2px solid #488ac0;
+    background-color: #47caca;
+    color: #701a8a;
+    border-radius: 10px;
+    margin-right: 3px;
+    font-weight: 600;
+    margin-top: 20px;
+
+}
+
+.new__cost button:active,
+.new__cost button:hover {
+    background-color: #4b85b4;
+    border-color: #339dce;
+
+}
+
+.new__cost-control label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+
+}
+
+.new__cost-control input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    width: 20rem;
+    margin-top: 10px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.costs__filter {
+    color: rgb(5, 221, 138);
+    padding: 0 1rem;
+}
+
+.costs__filter-control {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.costs__filter label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.costs__filter select {
+    font: inherit;
+    padding: 0.5rem 3rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cost__list {
+    list-style: none;
+    padding: 0;
+}
+
+.cost__list-fallback {
+    color: #0f0664;
+    text-align: center;
+}
+
+@media (min-width: 580px) {
+    .cost__item-description {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex: 1px;
+    }
+
+    .cost__item-description h2 {
+        font-size: 1.25rem;
+    }
+
+    .cost__item-price {
+        font-size: 16px;
+        padding: 16px 24px;
+    }
+
+}
